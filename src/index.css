@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+.animate-fall {
+  animation: fall 5s linear infinite;
+}
+
+@keyframes glow-dark {
+  0%, 100% {
+    text-shadow: 0 0 4px #6b21a8, 0 0 10px #6b21a8, 0 0 18px #6b21a8;
+  }
+  50% {
+    text-shadow: 0 0 8px #4c1d95, 0 0 16px #4c1d95, 0 0 24px #4c1d95;
+  }
+}
+.animate-glow-dark {
+  animation: glow-dark 2s infinite;
+}
+
